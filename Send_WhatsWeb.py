@@ -45,7 +45,7 @@ def enviar_midia(midia):
     attach = driver.find_element_by_css_selector("input[type='file']")
     attach.send_keys(midia)
     time.sleep(3)
-    send = driver.find_element_by_xpath("//div[contains(@class, '_3Git-')]")
+    send = driver.find_element_by_css_selector("span[data-icon='send']")
     send.click()    
 
 #Percorre todos os contatos/Grupos e envia as mensagens
